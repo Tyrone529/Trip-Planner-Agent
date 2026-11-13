@@ -1,0 +1,243 @@
+{
+  "summary": {
+    "case_count": 30,
+    "passed": 30,
+    "mode": "deterministic_replay",
+    "llm_calls": 0,
+    "external_map_calls": 0,
+    "comparison": "Same generated draft before versus after rule-based repair; NOT an upstream live baseline",
+    "before_repair_errors": 20,
+    "after_repair_errors_on_feasible_cases": 0,
+    "duration_seconds": 0.242
+  },
+  "cases": [
+    {
+      "id": "plan-1-18:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 0,
+      "after_errors": 0,
+      "elapsed_ms": 4,
+      "tool_attempts": 5
+    },
+    {
+      "id": "plan-1-15:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 0,
+      "after_errors": 0,
+      "elapsed_ms": 4,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-1-12:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 1,
+      "after_errors": 0,
+      "elapsed_ms": 4,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-1-11:30",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 1,
+      "after_errors": 0,
+      "elapsed_ms": 3,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-2-18:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 0,
+      "after_errors": 0,
+      "elapsed_ms": 6,
+      "tool_attempts": 2
+    },
+    {
+      "id": "plan-2-15:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 0,
+      "after_errors": 0,
+      "elapsed_ms": 3,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-2-12:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 2,
+      "after_errors": 0,
+      "elapsed_ms": 4,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-2-11:30",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 2,
+      "after_errors": 0,
+      "elapsed_ms": 4,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-3-18:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 0,
+      "after_errors": 0,
+      "elapsed_ms": 4,
+      "tool_attempts": 2
+    },
+    {
+      "id": "plan-3-15:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 0,
+      "after_errors": 0,
+      "elapsed_ms": 5,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-3-12:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 3,
+      "after_errors": 0,
+      "elapsed_ms": 7,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-3-11:30",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 3,
+      "after_errors": 0,
+      "elapsed_ms": 5,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-4-18:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 0,
+      "after_errors": 0,
+      "elapsed_ms": 5,
+      "tool_attempts": 2
+    },
+    {
+      "id": "plan-4-15:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 0,
+      "after_errors": 0,
+      "elapsed_ms": 4,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-4-12:00",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 4,
+      "after_errors": 0,
+      "elapsed_ms": 5,
+      "tool_attempts": 0
+    },
+    {
+      "id": "plan-4-11:30",
+      "kind": "feasible_plan",
+      "pass": true,
+      "before_errors": 4,
+      "after_errors": 0,
+      "elapsed_ms": 4,
+      "tool_attempts": 0
+    },
+    {
+      "id": "budget-1",
+      "kind": "infeasible_budget",
+      "pass": true,
+      "elapsed_ms": 2
+    },
+    {
+      "id": "budget-2",
+      "kind": "infeasible_budget",
+      "pass": true,
+      "elapsed_ms": 3
+    },
+    {
+      "id": "budget-3",
+      "kind": "infeasible_budget",
+      "pass": true,
+      "elapsed_ms": 4
+    },
+    {
+      "id": "budget-4",
+      "kind": "infeasible_budget",
+      "pass": true,
+      "elapsed_ms": 4
+    },
+    {
+      "id": "revision-0",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 4
+    },
+    {
+      "id": "revision-1",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 4
+    },
+    {
+      "id": "revision-2",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 4
+    },
+    {
+      "id": "revision-3",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 4
+    },
+    {
+      "id": "revision-4",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 7
+    },
+    {
+      "id": "revision-5",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 6
+    },
+    {
+      "id": "revision-6",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 3
+    },
+    {
+      "id": "revision-7",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 4
+    },
+    {
+      "id": "revision-8",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 4
+    },
+    {
+      "id": "revision-9",
+      "kind": "local_revision",
+      "pass": true,
+      "elapsed_ms": 12
+    }
+  ]
+}

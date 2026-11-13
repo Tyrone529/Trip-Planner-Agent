@@ -1,0 +1,30 @@
+{
+  "test_dates_beijing": [
+    "2026-11-05",
+    "2026-11-06"
+  ],
+  "pytest": {
+    "passed": 47,
+    "failed": 0,
+    "warnings": 1
+  },
+  "offline": {
+    "case_count": 30,
+    "passed": 30,
+    "mode": "deterministic_replay",
+    "llm_calls": 0,
+    "external_map_calls": 0,
+    "comparison": "Same generated draft before versus after rule-based repair; NOT an upstream live baseline",
+    "before_repair_errors": 20,
+    "after_repair_errors_on_feasible_cases": 0,
+    "duration_seconds": 0.242
+  },
+  "additional_checks": {
+    "total": 50,
+    "passed": 50
+  },
+  "frontend_build": "passed_with_large_chunk_warning",
+  "browser_map": "not_verified_missing_credentials",
+  "legacy_exports": "UI_success_only_download_artifact_not_inspected",
+  "server_restart_and_smoke": "passed"
+}

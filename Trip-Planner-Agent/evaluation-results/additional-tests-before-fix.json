@@ -1,0 +1,279 @@
+[
+  {
+    "name": "health",
+    "passed": true
+  },
+  {
+    "name": "offline_transport_公共交通",
+    "passed": true
+  },
+  {
+    "name": "offline_transport_步行",
+    "passed": true
+  },
+  {
+    "name": "offline_transport_自驾",
+    "passed": true
+  },
+  {
+    "name": "offline_transport_混合",
+    "passed": true
+  },
+  {
+    "name": "must_visit",
+    "passed": true
+  },
+  {
+    "name": "walk_limit",
+    "passed": true
+  },
+  {
+    "name": "mixed_walk",
+    "passed": true
+  },
+  {
+    "name": "budget_unknown",
+    "passed": true
+  },
+  {
+    "name": "async_generation",
+    "passed": true
+  },
+  {
+    "name": "completed_retry_rejected",
+    "passed": true
+  },
+  {
+    "name": "hotel_lock_True",
+    "passed": true
+  },
+  {
+    "name": "hotel_lock_False",
+    "passed": true
+  },
+  {
+    "name": "hotel_lock_True",
+    "passed": true
+  },
+  {
+    "name": "activity_lock_True",
+    "passed": true
+  },
+  {
+    "name": "activity_lock_False",
+    "passed": true
+  },
+  {
+    "name": "activity_lock_True",
+    "passed": true
+  },
+  {
+    "name": "revision_relaxed",
+    "passed": true
+  },
+  {
+    "name": "revision_indoor",
+    "passed": true
+  },
+  {
+    "name": "revision_constraints",
+    "passed": true
+  },
+  {
+    "name": "versions_and_diff",
+    "passed": true
+  },
+  {
+    "name": "saved_plan_list",
+    "passed": true
+  },
+  {
+    "name": "stale_revision",
+    "passed": true
+  },
+  {
+    "name": "missing_entities",
+    "passed": true
+  },
+  {
+    "name": "invalid_custom_instruction",
+    "passed": true
+  },
+  {
+    "name": "offline_custom_explicit_failure",
+    "passed": true
+  },
+  {
+    "name": "api_retry_checkpoint",
+    "passed": true
+  },
+  {
+    "name": "real_generation_live",
+    "passed": true,
+    "status": "completed",
+    "error_code": null,
+    "elapsed_ms": 8795,
+    "tool_count": 7,
+    "tool_errors": [
+      "NO_ROUTE"
+    ],
+    "llm_calls": 1,
+    "tokens": 3646,
+    "issue_codes": [
+      "ROUTE_UNKNOWN"
+    ],
+    "activities": [
+      2,
+      2
+    ]
+  },
+  {
+    "name": "real_evidence_live",
+    "passed": false
+  },
+  {
+    "name": "real_generation_mcp",
+    "passed": true,
+    "status": "completed",
+    "error_code": null,
+    "elapsed_ms": 23729,
+    "tool_count": 7,
+    "tool_errors": [],
+    "llm_calls": 1,
+    "tokens": 1473,
+    "issue_codes": [],
+    "activities": [
+      2,
+      2
+    ]
+  },
+  {
+    "name": "real_evidence_mcp",
+    "passed": true
+  },
+  {
+    "name": "real_revision_custom",
+    "passed": true,
+    "status": "completed",
+    "error_code": null,
+    "elapsed_ms": 6823,
+    "tool_count": 4,
+    "tool_errors": [],
+    "llm_calls": 1,
+    "tokens": 2002,
+    "issue_codes": [],
+    "activities": [
+      2,
+      1
+    ]
+  },
+  {
+    "name": "real_revision_relaxed",
+    "passed": true,
+    "status": "completed",
+    "error_code": null,
+    "elapsed_ms": 8475,
+    "tool_count": 5,
+    "tool_errors": [],
+    "llm_calls": 1,
+    "tokens": 1972,
+    "issue_codes": [],
+    "activities": [
+      2,
+      2
+    ]
+  },
+  {
+    "name": "real_revision_indoor",
+    "passed": true,
+    "status": "completed",
+    "error_code": null,
+    "elapsed_ms": 8784,
+    "tool_count": 5,
+    "tool_errors": [],
+    "llm_calls": 1,
+    "tokens": 2426,
+    "issue_codes": [
+      "INDOOR_UNVERIFIED"
+    ],
+    "activities": [
+      2,
+      2
+    ]
+  },
+  {
+    "name": "provider_direct_search_",
+    "passed": true,
+    "elapsed_ms": 758
+  },
+  {
+    "name": "provider_direct_weather_",
+    "passed": true,
+    "elapsed_ms": 1252
+  },
+  {
+    "name": "provider_direct_route_walking",
+    "passed": true,
+    "elapsed_ms": 633
+  },
+  {
+    "name": "provider_direct_route_driving",
+    "passed": true,
+    "elapsed_ms": 620
+  },
+  {
+    "name": "provider_direct_route_transit",
+    "passed": false,
+    "error_code": "NO_ROUTE"
+  },
+  {
+    "name": "provider_stdio_search_",
+    "passed": true,
+    "elapsed_ms": 977
+  },
+  {
+    "name": "provider_stdio_weather_",
+    "passed": true,
+    "elapsed_ms": 1657
+  },
+  {
+    "name": "provider_stdio_route_walking",
+    "passed": true,
+    "elapsed_ms": 665
+  },
+  {
+    "name": "provider_stdio_route_driving",
+    "passed": true,
+    "elapsed_ms": 718
+  },
+  {
+    "name": "provider_stdio_route_transit",
+    "passed": false,
+    "error_code": "NO_ROUTE"
+  },
+  {
+    "name": "provider_remote_search_",
+    "passed": true,
+    "elapsed_ms": 6473
+  },
+  {
+    "name": "provider_remote_weather_",
+    "passed": true,
+    "elapsed_ms": 793
+  },
+  {
+    "name": "provider_remote_route_walking",
+    "passed": true,
+    "elapsed_ms": 1024
+  },
+  {
+    "name": "provider_remote_route_driving",
+    "passed": true,
+    "elapsed_ms": 528
+  },
+  {
+    "name": "provider_remote_route_transit",
+    "passed": false,
+    "error_code": "NO_ROUTE"
+  }
+]
