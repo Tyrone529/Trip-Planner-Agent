@@ -27,12 +27,17 @@ POI、住宿、天气查询 → DeepSeek JSON 选点 → 路线查询与确定�
 
 后端采用 Python、Pydantic、httpx、MCP Python SDK 和 SQLite。当前主流程是显式工作流，不是自主 ReAct 循环；没有引入 LangGraph、RAG 或独立 Reflection Agent。SQLite 保存业务状态和检查点，不是语义长期记忆。
 
+## 仓库目录
+
+源码位于仓库内的 `Trip-Planner-Agent/` 子目录；下文命令中的相对路径均从克隆后的仓库根目录开始。代码入口列表中的 `app/` 路径相对于该源码子目录。
+
 ## 快速开始
 
 需要 Python 3.11+、Node.js 20+ 和 pnpm。以下命令适用于 macOS/Linux；Windows 请使用虚拟环境 Scripts 下的 Python。
 
 ```bash
 git clone https://github.com/Tyrone529/Trip-Planner-Agent.git
+cd Trip-Planner-Agent
 cd Trip-Planner-Agent/app/backend
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements-enhanced.txt
@@ -43,7 +48,7 @@ cp .env.example .env
 另开一个终端，在仓库根目录执行：
 
 ```bash
-cd app/frontend
+cd Trip-Planner-Agent/app/frontend
 pnpm install --frozen-lockfile
 cp .env.example .env
 pnpm exec vite --host 127.0.0.1 --port 5174 --strictPort
@@ -59,7 +64,7 @@ pnpm exec vite --host 127.0.0.1 --port 5174 --strictPort
 
 ### 真实服务配置
 
-仅在本地 app/backend/.env 填写：
+仅在本地 Trip-Planner-Agent/app/backend/.env 填写：
 
 | 变量 | 用途 |
 |---|---|
@@ -72,16 +77,16 @@ pnpm exec vite --host 127.0.0.1 --port 5174 --strictPort
 
 远程 MCP 须提供 maps_text_search、maps_search_detail、maps_weather 和 walking/driving/transit_integrated 对应路线工具。未设置远程地址时 MCP 模式启动项目内置 stdio 服务器。
 
-浏览器真实底图需另外在 app/frontend/.env 配置 VITE_AMAP_JS_KEY 和 VITE_AMAP_SECURITY_CODE。后端 Web Key 不等于浏览器 JS Key。VITE_API_BASE_URL 留空使用本地代理。模型与地图服务可能收费；本仓库不包含任何可用凭据。
+浏览器真实底图需另外在 Trip-Planner-Agent/app/frontend/.env 配置 VITE_AMAP_JS_KEY 和 VITE_AMAP_SECURITY_CODE。后端 Web Key 不等于浏览器 JS Key。VITE_API_BASE_URL 留空使用本地代理。模型与地图服务可能收费；本仓库不包含任何可用凭据。
 
 ## 测试与评测
 
 ```bash
-# 在 app/backend 下执行
+# 在 Trip-Planner-Agent/app/backend 下执行
 .venv/bin/python -m pytest tests -q
 .venv/bin/python evaluation/evaluate.py
 
-# 在 app/frontend 下执行
+# 在 Trip-Planner-Agent/app/frontend 下执行
 pnpm run build
 ```
 
@@ -97,7 +102,7 @@ pnpm run build
 
 离线集包含 16 个可行规划、4 个预算不可行案例、10 个局部修改案例。可行案例修正前草案有 20 项硬约束错误，修正后为 0；这是同一流程的离线消融，不是原版对照或模型准确率。各组测试有覆盖重叠，不能相加为独立业务场景总数。
 
-脱敏记录见 [evaluation-results](evaluation-results)。其中 before-fix 记录保留了首轮短距离公交无路线等失败；后续使用较长路线验证通过，不表示所有路线都可查询。轻松模式活动数反增问题已修复，并增加 0/1/2 个锁定活动的回归。
+脱敏记录见 [evaluation-results](Trip-Planner-Agent/evaluation-results)。其中 before-fix 记录保留了首轮短距离公交无路线等失败；后续使用较长路线验证通过，不表示所有路线都可查询。轻松模式活动数反增问题已修复，并增加 0/1/2 个锁定活动的回归。
 
 ## 边界
 
